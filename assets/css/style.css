@@ -7,6 +7,12 @@
     --white: white;
 }
 
+body {
+    background-image: url(../img/image.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .col-xs-1,
 .square-col {
     border: 1px solid black;
@@ -34,12 +40,20 @@
     background-color: var(--grey);
 }
 
+.white {
+    background-color: var(--white);
+}
+
 html {
     font-family: sans-serif;
 }
 
 .container-fluid.grid {
     display: flex;
+    min-width: 1315px;
+    max-width: 1315px;
+    margin: 0 auto;
+    box-shadow: 4px 8px 64px 10px rgba(0, 0, 0, 0.77);
 }
 
 .column.numbered-grid {
