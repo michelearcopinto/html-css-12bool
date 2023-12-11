@@ -1,0 +1,35 @@
+html {
+    font-family: sans-serif;
+}
+
+.container-fluid.grid {
+    display: flex;
+}
+
+.column.numbered-grid {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% / 12) * 1);
+    max-width: calc((100% / 12) * 1);
+}
+
+.col-xs-1,
+.square-col {
+    border: 1px solid black;
+    height: 100px;
+}
+
+.col-xs-1 {}
+
+.column .square-col:first-child {
+    background-color: white;
+}
+
+.container-fluid>.row.numbered-grid>.col-xs-1,
+.square-col {
+    background-color: #D8D8D8;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    font-weight: 600;
+}
