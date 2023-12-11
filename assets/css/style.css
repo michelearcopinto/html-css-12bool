@@ -1,3 +1,39 @@
+:root {
+    --outline: black;
+    --red: #FC0000;
+    --orange: #FF8700;
+    --yellow: #FFEB01;
+    --grey: #888888;
+    --white: white;
+}
+
+.col-xs-1,
+.square-col {
+    border: 1px solid black;
+    height: 100px;
+}
+
+.black {
+    background-color: var(--outline);
+    border: 1px solid var(--grey);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
 html {
     font-family: sans-serif;
 }
@@ -13,16 +49,8 @@ html {
     max-width: calc((100% / 12) * 1);
 }
 
-.col-xs-1,
-.square-col {
-    border: 1px solid black;
-    height: 100px;
-}
-
-.col-xs-1 {}
-
 .column .square-col:first-child {
-    background-color: white;
+    background-color: var(--white);
 }
 
 .container-fluid>.row.numbered-grid>.col-xs-1,
